@@ -21,7 +21,7 @@ def reset():
 @app.route("/set", methods=["POST"])
 def set_value():
     try:
-        new_value = int(request.form["new_value"])
+        new_value = int(request.form["value"])
         cnt.value = new_value
     except ValueError:
         pass
